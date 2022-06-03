@@ -1,0 +1,39 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "tmjJWn",
+    "name": "SleepDialog",
+    "comment": ""
+  },
+  "autoEndDialog": false,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "okdYx7"
+      },
+      "actions": [
+        {
+          "$kind": "ThreadSleepDialog",
+          "$designer": {
+            "id": "TtYr3o"
+          },
+          "sleepSeconds": "20",
+          "maxIgnoredMessages": "2"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "DG2G93"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "SleepDialog.lg",
+  "recognizer": "SleepDialog.lu.qna",
+  "id": "SleepDialog"
+}

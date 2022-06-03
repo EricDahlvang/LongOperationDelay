@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Hello, I understand 'background' and 'sleep' only.
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that. I understand 'background' and 'sleep' only.
+# SendActivity_b2Uurs()
+[Activity
+    Text = ${SendActivity_b2Uurs_text()}
+]
+
+# SendActivity_b2Uurs_text()
+- Finished background sleeping. Back in trigger
+# SendActivity_t5Ghgu()
+[Activity
+    Text = ${SendActivity_t5Ghgu_text()}
+]
+
+# SendActivity_t5Ghgu_text()
+- Finished sleeping. Back in trigger

@@ -1,0 +1,40 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "vpEDI8",
+    "name": "BackgroundSleepDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "V3dh9L"
+      },
+      "actions": [
+        {
+          "$kind": "BackgroundThreadSleepDialog",
+          "$designer": {
+            "id": "1MooE8"
+          },
+          "sleepSeconds": "20",
+          "maxIgnoredMessages": "2",
+          "prompt": "${BackgroundThreadSleepDialog_Prompt_1MooE8()}"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "pWf11p"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "BackgroundSleepDialog.lg",
+  "recognizer": "BackgroundSleepDialog.lu.qna",
+  "id": "BackgroundSleepDialog"
+}

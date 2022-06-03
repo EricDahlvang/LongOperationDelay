@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/component/v1.0/component.schema",
+  "$role": "implements(Microsoft.IDialog)",
+  "title": "BackgroundThreadSleepDialog",
+  "description": "This dialog will sleep for the provided number of seconds",
+  "additionalProperties": false,
+  "properties": {
+    "sleepSeconds": {
+      "$ref": "schema:#/definitions/numberExpression",
+      "title": "Seconds to sleep",
+      "description": "The number of seconds to wait before the dialog is auto closed.",
+      "examples": [
+        20,
+        "=user.delayTimeout"
+      ]
+    },
+    "maxIgnoredMessages": {
+      "$ref": "schema:#/definitions/numberExpression",
+      "title": "Maximum ignored messages, or re-prompts",
+      "description": "The number of times the dialog will re-prompt the user. If not prompt is provided, incoming messages are ignored.",
+      "examples": [
+        2,
+        "=user.repromptAttempts"
+      ]
+    },
+    "prompt": {
+      "$kind": "Microsoft.IActivityTemplate",
+      "title": "Prompt",
+      "description": "Message to send the user if they message the bot while it is 'sleeping'.",
+      "examples": [
+        "Please complete the ticket creation process."
+      ]
+    }
+  }
+}

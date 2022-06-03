@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# BackgroundThreadSleepDialog_Prompt_1MooE8()
+[Activity
+    Text = ${BackgroundThreadSleepDialog_Prompt_1MooE8_text()}
+]
+
+# BackgroundThreadSleepDialog_Prompt_1MooE8_text()
+- One moment please.
